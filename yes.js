@@ -25,12 +25,13 @@ else if(noClicks >= 6){
     "\n\nAlso… I saw those NO clicks 😭😤\n  I’m choosing to be dramatically offended for exactly 3 seconds…\nThen I forgive you because you’re my Appu 💜";
 
 }
+    /*
 else{
     endingMessage =
     "\n\nWOW 😑\n" +
     noClicks + " NO clicks??\n" +
     "I’m fake angry now 😤💜";
-}
+}*/
 
 /* FINAL MESSAGE */
 const messageText = baseMessage + endingMessage;
@@ -59,6 +60,7 @@ function typeMessage(){
         setTimeout(typeMessage, 40);
     }
 }
+
 
 
 
