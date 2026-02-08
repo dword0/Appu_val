@@ -25,7 +25,7 @@ else if(noClicks <= 2){
 }
 else if(noClicks > 3){
     endingMessage =
-    "\n\nBruh… you pressed NO " + noClicks + " times 😤\n" +
+    "\n\nBruh… you pressed a lot of NOs, you know that 😤\n" +
     "I’m pretending to be offended 😭💜";
 }
 else{
@@ -62,3 +62,4 @@ function typeMessage(){
         setTimeout(typeMessage, 40);
     }
 }
+
