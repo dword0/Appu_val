@@ -20,7 +20,7 @@ else if(noClicks <= 2){
     "\n\nYou hesitated a little 😏\n" +
     "But I’ll allow it 💜";
 }
-else if(noClicks <= 6){
+else if(noClicks >= 6){
     endingMessage =
     "\n\nAlso… I saw those NO clicks 😭😤\n  I’m choosing to be dramatically offended for exactly 3 seconds…\nThen I forgive you because you’re my Appu 💜";
 
@@ -59,6 +59,7 @@ function typeMessage(){
         setTimeout(typeMessage, 40);
     }
 }
+
 
 
 
