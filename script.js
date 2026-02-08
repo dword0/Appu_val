@@ -9,7 +9,7 @@ const question = document.getElementById("mainQuestion");
 const buttons = document.getElementById("buttons");
 
 const introLines = [
-    "Hey...",
+    "Eda Appu...",
     "I wanted to ask you something...",
     "It’s important...",
     "💜"
@@ -280,3 +280,4 @@ function sparkle() {
 sparkle();
 
 });
+
