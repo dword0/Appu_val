@@ -23,9 +23,9 @@ else if(noClicks <= 2){
     "\n\nYou hesitated a little 😏\n" +
     "But I’ll allow it 💜";
 }
-else if(noClicks > 3){
+else if(noClicks <= 6){
     endingMessage =
-    "\n\nBruh… you pressed a lot of NOs, you know that 😤\n" +
+    "\n\nBruh… you pressed NO " + noClicks + " times 😤\n" +
     "I’m pretending to be offended 😭💜";
 }
 else{
@@ -62,4 +62,5 @@ function typeMessage(){
         setTimeout(typeMessage, 40);
     }
 }
+
 
