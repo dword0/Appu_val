@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Be My Valentine?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="celebrationSound">
+    <source src="https://assets.mixkit.co/sfx/preview/mixkit-happy-bells-notification-937.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="hearts-bg">
+<span style="left:5%; animation-duration:18s;">💜</span>
+<span style="left:15%; animation-duration:22s;">💕</span>
+<span style="left:25%; animation-duration:20s;">💖</span>
+<span style="left:35%; animation-duration:24s;">💗</span>
+<span style="left:45%; animation-duration:19s;">💟</span>
+<span style="left:55%; animation-duration:23s;">💜</span>
+<span style="left:65%; animation-duration:21s;">💕</span>
+<span style="left:75%; animation-duration:26s;">💖</span>
+<span style="left:85%; animation-duration:20s;">💗</span>
+<span style="left:95%; animation-duration:24s;">💟</span>
+</div>
+
+<canvas id="sparkleCanvas"></canvas>
+<canvas id="confetti"></canvas>
+
+<div class="card">
+
+<h2 id="introText"></h2>
+<h1 id="mainQuestion" style="display:none;">
+Will you be my Valentine?
+</h1>
+
+<div class="buttons" id="buttons" style="display:none;">
+<button id="yesBtn" class="yes-btn">💜 YES 💜</button>
+<button id="noBtn" class="no-btn">No 😢</button>
+</div>
+
+<div id="gifContainer"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

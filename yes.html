@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>💜</title>
+
+<style>
+body{
+background:linear-gradient(135deg,#E6E6FA,#F3E8FF);
+font-family:Arial;
+text-align:center;
+padding-top:120px;
+margin:0;
+overflow:hidden;
+}
+
+/* HEADING */
+h1{
+font-size:60px;
+color:#7C3AED;
+margin-bottom:50px;
+}
+
+/* MESSAGE BOX */
+.message-wrapper{
+position:relative;
+width:min(500px,90%);
+margin:0 auto;
+}
+
+.message-box{
+position:relative;
+z-index:2;
+
+padding:25px 30px;
+border-radius:20px;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(10px);
+box-shadow:0 15px 30px rgba(124,58,237,0.2);
+
+font-size:20px;
+color:#5B21B6;
+min-height:90px;
+line-height:1.5;
+}
+
+/* FLOATING HEARTS BEHIND BOX */
+.box-hearts{
+position:absolute;
+inset:0;
+overflow:hidden;
+z-index:1;
+pointer-events:none;
+}
+
+.box-hearts span{
+position:absolute;
+bottom:-40px;
+font-size:26px;
+opacity:0.5;
+animation:floatUp linear infinite;
+}
+
+@keyframes floatUp{
+from{transform:translateY(0);}
+to{transform:translateY(-200px);}
+}
+
+/* TYPE TEXT GLOW */
+.glow-text{
+text-shadow:
+0 0 8px rgba(192,132,252,0.8),
+0 0 16px rgba(232,121,249,0.6);
+}
+
+/* CURSOR */
+.cursor{
+display:inline-block;
+width:8px;
+height:22px;
+background:#7C3AED;
+margin-left:4px;
+animation:blink 1s infinite;
+vertical-align:bottom;
+}
+
+@keyframes blink{
+0%{opacity:1;}
+50%{opacity:0;}
+100%{opacity:1;}
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>I knew it!! 💜</h1>
+
+<div class="message-wrapper">
+
+<!-- FLOATING HEARTS -->
+<div class="box-hearts">
+<span style="left:10%; animation-duration:6s;">💜</span>
+<span style="left:25%; animation-duration:8s;">💕</span>
+<span style="left:45%; animation-duration:7s;">💖</span>
+<span style="left:65%; animation-duration:9s;">💗</span>
+<span style="left:85%; animation-duration:6s;">💟</span>
+</div>
+
+<div class="message-box">
+<span id="typeMessage" class="glow-text"></span>
+<span class="cursor"></span>
+</div>
+
+</div>
+
+<!-- SOFT ROMANTIC MUSIC -->
+<audio id="yesMusic" autoplay loop>
+<source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+</audio>
+
+<script src="yes.js"></script>
+
+</body>
+</html>

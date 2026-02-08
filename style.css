@@ -1,0 +1,124 @@
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#E6E6FA,#F3E8FF,#E9D5FF);
+overflow-x:hidden;
+text-align:center;
+}
+
+/* Glass Card */
+.card{
+width:min(500px,90%);
+margin:80px auto;
+padding:40px 30px;
+border-radius:25px;
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(14px);
+box-shadow:0 20px 40px rgba(124,58,237,0.2);
+}
+
+/* Text */
+h1{color:#7C3AED;font-size:38px;}
+h2{color:#6D28D9;font-weight:500;min-height:60px;}
+
+/* Buttons */
+.buttons{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.yes-btn{
+background:linear-gradient(135deg,#C084FC,#E879F9);
+color:white;
+border:none;
+padding:18px 30px;
+font-size:18px;
+border-radius:25px;
+cursor:pointer;
+animation:pulse 2s infinite;
+}
+
+.no-btn{
+background:white;
+color:#444;
+border:2px solid #DDD6FE;
+padding:16px 26px;
+font-size:17px;
+border-radius:999px;
+cursor:pointer;
+}
+
+/* Glow */
+@keyframes pulse{
+0%{transform:scale(1);box-shadow:0 0 12px rgba(192,132,252,0.5);}
+50%{transform:scale(1.06);box-shadow:0 0 30px rgba(232,121,249,0.8);}
+100%{transform:scale(1);}
+}
+
+/* Floating Hearts */
+.hearts-bg span{
+position:absolute;
+bottom:-120px;
+font-size:44px;
+opacity:0.5;
+animation:float linear infinite;
+filter:drop-shadow(0 0 6px rgba(180,120,255,0.6));
+}
+
+@keyframes float{
+from{transform:translateY(0);}
+to{transform:translateY(-120vh);}
+}
+
+/* Canvas layers */
+#confetti,#sparkleCanvas{
+position:fixed;
+inset:0;
+pointer-events:none;
+}
+
+/* Flash */
+.flash{
+animation:flash 0.6s;
+}
+@keyframes flash{
+0%{background:white;}
+100%{background:transparent;}
+}
+
+
+/* HEART EXPLOSION PARTICLES */
+.heart-particle{
+position:fixed;
+font-size:28px;
+pointer-events:none;
+animation:heartBurst 1s ease-out forwards;
+}
+
+@keyframes heartBurst{
+0%{
+transform:translate(0,0) scale(1);
+opacity:1;
+}
+100%{
+transform:translate(var(--x),var(--y)) scale(0.5);
+opacity:0;
+}
+}
+
+/* SCREEN SHAKE */
+.shake{
+animation:shakeScreen 0.4s;
+}
+
+@keyframes shakeScreen{
+0%{transform:translate(0,0);}
+20%{transform:translate(-6px,3px);}
+40%{transform:translate(6px,-3px);}
+60%{transform:translate(-4px,2px);}
+80%{transform:translate(4px,-2px);}
+100%{transform:translate(0,0);}
+}
