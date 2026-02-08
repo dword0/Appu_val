@@ -1,10 +1,7 @@
 const messageElement = document.getElementById("typeMessage");
 
 /* BASE MESSAGE */
-let baseMessage =
-"I’m so happy you said yes 💜\n" +
-"You just made my whole day brighter ✨\n" +
-"I can’t wait to spend Valentine’s with you 🌸";
+let baseMessage ="\nMy Dear Appu… 💜\nI’m really, really happy you said yes... Not like i would've let you say No...But that aside...\nYou bring this beautiful mix of kindness and absolute chaos energy into my life...and somehow you balance both so perfectly...The way you care...the way you always try to give...even from the very first time we met… I noticed it. And I never forgot it...!!!\nAnd your eyes… yeah...I’m not even going to pretend I don’t get lost there sometimes...The first time we met and the look you had the moment I gave you the flowers... ufff... to be frank I kinda melted right then and there...(But i'm gonna deny it if you ask me that ever again...😛😛😛)\nBeing with you just makes life feel more exciting...more alive...more “nerai korai” in the best way possible..And honestly...all I really want is to keep making you happy...in all the little ways I can.\nAlso… I know I sometimes make you angry a lot 😭  \nI’m really sorry for that… but you know I’ll keep trying to be better (and maybe slightly less annoying...maybe...😏)\nAnd I actually wanted to give this to you in a letter...in person...Don’t worry..that still exists. \nThis is just for the time being 💜\n\nI love you Nerai Korai...💜💜💜💜💜";
 
 /* READ NO CLICK COUNT */
 let noClicks = parseInt(localStorage.getItem("noClickCount")) || 0;
@@ -62,6 +59,7 @@ function typeMessage(){
         setTimeout(typeMessage, 40);
     }
 }
+
 
 
 
