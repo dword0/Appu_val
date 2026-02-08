@@ -16,7 +16,7 @@ let endingMessage = "";
 if(noClicks === 0){
     endingMessage =
     "\n\nYou said YES immediately 😍💜\n" +
-    "Okay wow… that made me insanely happy 🥹✨";
+    "Okay wow… that made me insanely happy 🥹✨ \n Okay wow… I’m going to remember this forever.";
 }
 else if(noClicks <= 2){
     endingMessage =
@@ -25,8 +25,8 @@ else if(noClicks <= 2){
 }
 else if(noClicks <= 6){
     endingMessage =
-    "\n\nBruh… you pressed NO " + noClicks + " times 😤\n" +
-    "I’m pretending to be offended 😭💜";
+    "\n\nAlso… I saw those NO clicks 😭😤\n  I’m choosing to be dramatically offended for exactly 3 seconds…\nThen I forgive you because you’re my Appu 💜";
+
 }
 else{
     endingMessage =
@@ -62,5 +62,6 @@ function typeMessage(){
         setTimeout(typeMessage, 40);
     }
 }
+
 
 
